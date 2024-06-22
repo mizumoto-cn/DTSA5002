@@ -1,5 +1,10 @@
 # W2 Quiz2 Invariance, Mean-Squared Error, and Efficiency
 
+## 知识要点
+
+> 效率：两个无偏估计量的方差之比
+> 偏差：估计量的期望值与真实参数值之间的差，即 $Bias(\hat{\theta}) = E[\hat{\theta}] - \theta$
+
 ## Question 1
 
 Suppose that $X_1, X_2, ..., X_n$ is a random sample from the exponential distribution with parameter $\lambda$. 

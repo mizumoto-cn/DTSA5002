@@ -1,5 +1,17 @@
 # Week3 Quiz1 CRLB
 
+## 知识要点
+
+> 1. 克拉默-劳下界是一个用于评估无偏估计量方差的下限的工具。他的计算公式是：$Var(\hat{\tau(\theta)}) \geq \frac{[\tau'(\theta)]}{I_n(\theta)}$，其中，$\hat{\tau(\theta)}$ 是参数 $\tau(\theta)$ 的无偏估计量，$I(\theta)$ 是费舍尔信息。
+> 2. 费舍尔信息的计算方式有几种，最基础的是：
+> 2.1. 先根据分布的pdf $f(x;\theta)$ 计算对数似然函数的导数；得出 $f(\vec{x};\theta)$
+> 2.2. 再对其取对数并求导，平方后代入得到费舍尔信息 $I_n(\theta)=E[(\frac{\partial}{\partial \theta} ln f(\vec{x};\theta))^2]$
+>
+> 3. 但是我们可以做如下简化：
+> 3.1. $E[\frac{\partial}{\partial \theta} ln f(x;\theta)] = 0$，所以 $I_n(\theta) = -E[\frac{\partial^2}{\partial \theta^2} ln f(x;\theta)]$，即对对数似然函数求二阶导数的期望值的负数。
+> 3.2. $I_n(\theta) = n\dot{I_1(\theta)}$，即单个观测的费舍尔信息的n倍。
+>
+
 ## 1
 
 Let $X_1, X_2, \ldots, X_n$ be a random sample from a Normal distribution with mean $\mu$ and variance $\sigma^2$. Find the Cramer-Rao lower bound for the variance of an unbiased estimator of $\mu$.
